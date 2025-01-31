@@ -6,12 +6,13 @@
     <title>DashCraft</title>
     <link rel="stylesheet" href="{{ asset('css/weather.css') }}">
     <link rel="stylesheet" href="{{ asset('css/news.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
-<body>
-    <h1>Welcome to DashCraft</h1>
-    <h2>My widgets</h2>
+<body style="background-color: #FAFCFC">
+    <h1 style="color:#011016; text-align:center">Welcome to DashCraft</h1>
+    <h2 style="color:#011016; text-align:center">My widgets</h2>
     <livewire:weather-widget/>
     <livewire:news-widget/>
     <livewire:wordpress-widget/>
