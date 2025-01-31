@@ -16,5 +16,6 @@
     <livewire:news-widget/>
     <livewire:wordpress-widget/>
     <livewire:spotify-widget/>
+    <livewire:covid-widget/>
 </body>
 </html>
