@@ -15,5 +15,6 @@
     <livewire:weather-widget/>
     <livewire:news-widget/>
     <livewire:wordpress-widget/>
+    <livewire:spotify-widget/>
 </body>
 </html>
