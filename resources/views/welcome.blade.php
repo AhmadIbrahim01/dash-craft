@@ -6,6 +6,7 @@
     <title>DashCraft</title>
     <link rel="stylesheet" href="{{ asset('css/weather.css') }}">
     <link rel="stylesheet" href="{{ asset('css/news.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
