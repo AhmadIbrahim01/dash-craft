@@ -11,18 +11,29 @@
         <p class="text-red-500">{{ session('error') }}</p>
     @endif
 
-    <ul>
+    @if ($results)
+        
+    
+    <div class="news-container custom-scrollbar">
         @foreach($results as $track)
-            <li>
-                <strong>{{ $track['name'] }}</strong> by {{ $track['artists'][0]['name'] }}
-                <br>
-                <p>{{ $track['preview_url'] }}</p>
-                <a href={{ $track['external_urls']['spotify'] }} target="_blank" rel="noopener noreferrer">Go</a>
-                <img src={{$track['album']['images'][0]['url']}} alt="">
-                <audio controls>
+        <div class="news-card spotify-card">
+            <div class="flex spotify-info">
+                <img class="spotify-img" src={{$track['album']['images'][0]['url']}} alt="">
+                <div class="spotify-song">
+                        <h1>{{ $track['name'] }}</h1>
+                        <strong>{{ $track['name'] }}</strong> by {{ $track['artists'][0]['name'] }}
+                </div>
+            </div>
+            <div class="flex spotify-play">
+                <a class="spotify-link" href={{ $track['external_urls']['spotify'] }} target="_blank" rel="noopener noreferrer">Listen in Spotify</a>
+                {{-- <div class="audio-container">
+                <audio class="spotify-audio" controls>
                     <source src="{{ $track['preview_url'] }}" type="audio/mpeg">
-                </audio>
-            </li>
-        @endforeach
-    </ul>
+                    </audio>
+                </div>   --}}
+                </div>  
+            </div>  
+            @endforeach
+        </div>
+        @endif
 </div>

@@ -1,0 +1,45 @@
+.song {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    padding: 20px;
+
+    background: #400307;
+    border-radius: 10px;
+}
+
+.spotify-info {
+    gap: 10px;
+}
+
+.spotify-img {
+    border-radius: 5px;
+}
+
+.spotify-song {
+    color: white;
+}
+
+.spotify-audio {
+    height: 20px;
+}
+
+.audio-container {
+    background-color: #400307;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.spotify-play {
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.spotify-link {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
