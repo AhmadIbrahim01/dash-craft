@@ -1,6 +1,6 @@
 <div>
     <div class="weather-container">
-        <h2 class="title">Weather App</h2>
+        <h2 class="title">Weather Widget</h2>
         <select wire:model="location" wire:change="showWeather" class="city-select">
             <option value="">Select a city</option>
             <option value="London">London</option>
