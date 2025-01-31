@@ -1,13 +1,14 @@
 <div>
-    <h1>Covid Widget</h1>
-    <input type="text" wire:model="country" wire:keydown.enter="searchCountry" placeholder="Enter country name">
-    <button wire:click="searchCountry">Search</button>
+    <div class="weather-container">
+        <h1>Covid Widget</h1>
+        <input class="city-select" type="text" wire:model="country" wire:keydown.enter="searchCountry" placeholder="Enter country name">
+        <button class="city-select" wire:click="searchCountry">Search</button>
+    </div>
 
 
-    <canvas id="covidChart"></canvas>
+    <canvas class="covidChart" id="covidChart"></canvas>
     
     @if(!empty($covidData))
-        <h1>{{$covidData['country']}}</h1>
 
 
 
@@ -36,7 +37,7 @@
                     datasets: [{
                         label: data.country,
                         data: [data.cases, data.recovered, data.deaths],
-                        backgroundColor: ['blue', 'green', 'red'],
+                        backgroundColor: ['#007bff', 'green', 'red'],
                         borderColor: ['darkblue', 'darkgreen', 'darkred'],
                         borderWidth: 1
                     }]

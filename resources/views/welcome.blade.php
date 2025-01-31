@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/weather.css') }}">
     <link rel="stylesheet" href="{{ asset('css/news.css') }}">
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/spotify.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
