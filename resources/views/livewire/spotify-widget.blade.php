@@ -1,7 +1,11 @@
 <div>
-    <h1>Spotify Widget</h1>
-    <input type="text" wire:model="query" placeholder="Search Spotify">
-    <button wire:click="spotifySearch">Search</button>
+
+    <div class="weather-container">
+        
+        <h1>Spotify Widget</h1>
+        <input class="city-select" type="text" wire:model="query" placeholder="Search Spotify">
+        <button class="city-select" wire:click="spotifySearch">Search</button>
+    </div>
 
     @if(session()->has('error'))
         <p class="text-red-500">{{ session('error') }}</p>
