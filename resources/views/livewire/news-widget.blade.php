@@ -8,4 +8,9 @@
             <option value="apple">Apple</option>
         </select>
     </div>
+
+
+    @if ($error)
+        <div class="alert">{{ $error }}</div>
+    @endif
 </div>
