@@ -9,17 +9,19 @@
 } */
 
 .news-container {
-    width: 400px;
+    display: block;
+    margin: auto;
+    max-width: 400px;
     max-height: 500px;
     overflow-y: auto;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #400307;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .news-card {
-    background: #ffffff;
+    background: #56060b;
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 8px;
@@ -45,14 +47,14 @@
 .news-title {
     margin: 10px 0 5px;
     font-size: 16px;
-    color: #333;
+    color: #fffa;
 }
 
 .news-source,
 .news-author,
 .news-description {
     font-size: 14px;
-    color: #555;
+    color: #a4a4a4;
     margin: 3px 0;
 }
 
@@ -66,4 +68,27 @@
 
 .news-link:hover {
     text-decoration: underline;
+}
+
+.custom-scrollbar {
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #400307;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #56060b;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
