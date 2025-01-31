@@ -13,5 +13,6 @@
     <h2>My widgets</h2>
     <livewire:weather-widget/>
     <livewire:news-widget/>
+    <livewire:wordpress-widget/>
 </body>
 </html>
