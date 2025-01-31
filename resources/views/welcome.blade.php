@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DashCraft</title>
     <link rel="stylesheet" href="{{ asset('css/weather.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/news.css') }}">
 
 </head>
 <body>
