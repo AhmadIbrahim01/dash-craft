@@ -1,4 +1,5 @@
 <div>
+    <h1>Spotify Widget</h1>
     <input type="text" wire:model="query" placeholder="Search Spotify">
     <button wire:click="spotifySearch">Search</button>
 
