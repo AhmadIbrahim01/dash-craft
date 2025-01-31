@@ -1,8 +1,8 @@
 .weather-container {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 20px;
-    background: #1e293b;
+    background: #400307;
     color: #f8fafc;
     border-radius: 10px;
     text-align: center;
@@ -21,10 +21,14 @@
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    background: #334155;
+    background: #56060b;
     color: white;
     margin-bottom: 15px;
     cursor: pointer;
+}
+
+.city-select::placeholder {
+    color: #e4f9f9;
 }
 
 .alert {
@@ -36,7 +40,10 @@
 }
 
 .weather-card {
-    background: #334155;
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    background: #56060b;
     padding: 20px;
     border-radius: 10px;
     margin-top: 15px;
@@ -44,7 +51,13 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+.weather-card > p {
+    color: white;
+    font-weight: bold;
+}
+
 .weather-title {
+    color: #f8fafc;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -62,7 +75,7 @@
 .date span,
 .sun-time span {
     font-weight: bold;
-    color: #facc15;
+    color: #007bff;
 }
 
 @media (max-width: 480px) {

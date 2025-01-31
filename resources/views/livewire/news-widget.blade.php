@@ -16,7 +16,7 @@
 
 
     @if ($data)
-        <div class="news-container">
+        <div class="news-container custom-scrollbar">
             @for ($i = 0; $i < 3; $i++) 
                 <div class="news-card">
                     <img src="{{ $articles[$i]['urlToImage'] }}" alt="News Image" class="news-image">

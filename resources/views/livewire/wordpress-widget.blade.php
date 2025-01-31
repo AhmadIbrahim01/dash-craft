@@ -15,7 +15,7 @@
 
 
     <div>
-        <canvas id="myChart"></canvas>
+        <canvas class="myChart" id="myChart"></canvas>
     </div>
 
     @if ($data)
@@ -46,7 +46,8 @@
                             datasets: [{
                                 label: '# of Votes',
                                 data: values,
-                                borderWidth: 1
+                                borderWidth: 1,
+                                backgroundColor: ["#56060b"],
                             }]
                         },
                         options: {

@@ -1,0 +1,105 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.myChart {
+    display: block;
+    margin: auto;
+    height: 200px !important;
+    width: 400px !important;
+}
+
+.covidChart {
+    display: block;
+    margin: auto;
+    height: 400px !important;
+    width: 800px !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.header {
+    background-color: #012e3f;
+    max-width: 400px;
+    height: 150px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.header h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+    z-index: 100;
+}
+.header div {
+    width: fit-content;
+    margin-top: 10px;
+    z-index: 100;
+}
+.header div > h1 {
+    background-color: #f9a718;
+    color: #bf1f2b;
+    padding: 0px 5px;
+}
+.header div > h1 span {
+    color: #fff;
+}
+
+.doodle-1 {
+    position: fixed;
+    width: 350px;
+    left: 0px;
+}
+.doodle-2 {
+    position: fixed;
+    width: 300px;
+    top: 0px;
+    right: 0px;
+}
+.doodle-3 {
+    position: absolute;
+    width: 70px;
+    top: 0px;
+    right: 0px;
+    transform: scaleX(-1);
+}
+.doodle-4 {
+    position: absolute;
+    width: 70px;
+    top: 0px;
+    left: 0px;
+}
+.stars {
+    position: absolute;
+    width: 70px;
+    bottom: 0px;
+    left: 100px;
+}
+
+.sun {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 100px;
+    transform: scaleX(-1);
+}
